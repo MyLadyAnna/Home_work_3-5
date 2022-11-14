@@ -1,7 +1,7 @@
 ﻿// Задайте массив вещественных чисел. Найдите разницу между 
 // максимальным и минимальным элементов массива.
 
-void FillArray(double[] array, int minValue = -99, int maxValue = 99)        
+void FillArray(double[] array, int minValue = -99, int maxValue = 99)
 {
     Random rnd = new Random();
     for (int i = 0; i < array.Length; i++)
@@ -10,7 +10,7 @@ void FillArray(double[] array, int minValue = -99, int maxValue = 99)
     }
 }
 
-void PrintArray(double[] array)            
+void PrintArray(double[] array)
 {
     foreach (var item in array)
     {
@@ -24,9 +24,9 @@ double GetMaxNumber(double[] array)         // функция нахождени
     double max = array[0];
     for (int i = 0; i < array.Length; i++)
     {
-        if(array[i] > max)
+        if (array[i] > max)
         {
-            max  = array[i];
+            max = array[i];
         }
     }
     return max;
@@ -37,9 +37,9 @@ double GetMinNumber(double[] array)         // функция нахождени
     double min = array[0];
     for (int i = 0; i < array.Length; i++)
     {
-        if(array[i] < min)
+        if (array[i] < min)
         {
-            min  = array[i];
+            min = array[i];
         }
     }
     return min;
@@ -48,7 +48,7 @@ double GetMinNumber(double[] array)         // функция нахождени
 
 Console.Clear();
 Console.Write("Введите длину массива: ");
-int length = int.Parse(Console.ReadLine() ?? "0"); ;
+int length = int.Parse(Console.ReadLine() ?? "0");
 double[] massive = new double[length];
 FillArray(massive);
 PrintArray(massive);
