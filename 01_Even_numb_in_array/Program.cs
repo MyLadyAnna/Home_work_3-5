@@ -35,7 +35,8 @@ int GetQuantityEvenNumbers(int[] array)
 
 
 Console.Clear();
-int length = 10;
+Console.Write("Введите длину массива: ");
+int length = int.Parse(Console.ReadLine() ?? "0");;
 int[] massive = new int[length];
 FillArray(massive);
 PrintArray(massive);
