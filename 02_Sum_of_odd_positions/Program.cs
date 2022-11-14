@@ -32,7 +32,7 @@ int SumOfOddPositions(int[] array)      // сумма элементов, кот
 
 Console.Clear();
 Console.Write("Введите длину массива: ");
-int length = int.Parse(Console.ReadLine() ?? "0"); ;
+int length = int.Parse(Console.ReadLine() ?? "0");
 int[] massive = new int[length];
 FillArray(massive);
 PrintArray(massive);
