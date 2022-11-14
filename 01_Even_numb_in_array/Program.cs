@@ -2,7 +2,7 @@
 // числами. Напишите программу, которая покажет количество чётных 
 // чисел в массиве.
 
-void FillArray(int[] array, int minValue = 100, int maxValue = 999)        // функция, где дается какой-то масив, а его элементы переписываются рандомайзером
+void FillArray(int[] array, int minValue = 100, int maxValue = 999)   
 {
     Random rnd = new Random();
     for (int i = 0; i < array.Length; i++)
@@ -11,7 +11,7 @@ void FillArray(int[] array, int minValue = 100, int maxValue = 999)        // ф
     }
 }
 
-void PrintArray(int[] array)            // функция печати массива через foreach
+void PrintArray(int[] array)           
 {
     foreach (var item in array)
     {
@@ -20,7 +20,7 @@ void PrintArray(int[] array)            // функция печати масс�
     Console.WriteLine();
 }
 
-int GetQuantityEvenNumbers(int[] array)
+int GetQuantityEvenNumbers(int[] array)     // функция кол-ва четных элементов
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
