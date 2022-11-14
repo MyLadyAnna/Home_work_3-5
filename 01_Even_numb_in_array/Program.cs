@@ -34,8 +34,6 @@ int GetQuantityEvenNumbers(int[] array)
 }
 
 
-
-
 Console.Clear();
 int length = 10;
 int[] massive = new int[length];
